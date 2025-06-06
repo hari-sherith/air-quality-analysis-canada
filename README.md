@@ -1,45 +1,48 @@
-# 🇨🇦 Canadian Air Quality CO Dashboard
+# Canadian Air Quality CO Dashboard
 
-This project visualizes 2023 Carbon Monoxide (CO) pollution levels across Canadian regions using data from the **National Air Pollution Surveillance (NAPS)** program.
+Streamlit-powered, pandas-analyzed, and matplotlib-visualized data analysis of carbon monoxide (CO) levels across Canada in 2023.
 
-Built using **Python**, **Streamlit**, and **pandas**, the dashboard allows users to explore monthly trends and identify regions with the highest pollution levels.
-
----
-
-## 📊 Features
-
-- 📈 **Monthly CO trends** for all of Canada
-- 📍 **Top 10 most polluted regions** by annual CO levels
-- 🎛️ **Region filter** to view pollution data by location
-- 🧼 Cleaned and structured dataset with contextual preprocessing
+Data source: NAPS (National Air Pollution Surveillance) program.
 
 ---
 
-## 🚀 How to Run Locally
+## Overview
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/hari-sherith/air-quality-analysis-canada.git
-   cd air-quality-analysis-canada
+This project provides an interactive dashboard to explore regional and national CO pollution trends across Canada. Built using a lightweight, reproducible Python stack with a focus on quick analytics and public reporting.
 
 ---
 
-## 🛠 Tech Stack
+## Features
+
+- Monthly CO trendline across Canada
+- Region-level filter and comparison
+- Top 10 most polluted regions by annual average
+- Interactive visualizations with Streamlit
+- Structured preprocessing pipeline
+
+---
+
+## Stack
 
 - Python 3.12+
-- Streamlit
 - pandas
 - matplotlib
 - seaborn
+- Streamlit
 
 ---
 
-## 📁 Dataset
+## Dataset
 
-- **Source**: [Canada Open Data – NAPS CO Annual Data (2023)](https://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/)
+Source: [Canada Open Data – NAPS CO Annual Data (2023)](https://data.ec.gc.ca/data/air/monitor/national-air-pollution-surveillance-naps-program/)
 
 ---
 
-## 📸 Screenshot
+## Running Locally
 
-_Coming soon!_
+```bash
+git clone https://github.com/hari-sherith/air-quality-analysis-canada.git
+cd air-quality-analysis-canada
+pip install -r requirements.txt
+streamlit run app.py
+
