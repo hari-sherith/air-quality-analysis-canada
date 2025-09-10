@@ -6,7 +6,7 @@ import seaborn as sns
 
 st.set_page_config(page_title="Air Quality CO Dashboard", layout="wide")
 
-st.title("🇨🇦 Canadian Air Quality CO Analysis – 2023")
+st.title("Canadian Air Quality CO Analysis – 2023")
 st.markdown("This dashboard visualizes carbon monoxide (CO) pollution levels across Canadian regions using data from the NAPS program.")
 
 # Load data
@@ -28,7 +28,7 @@ monthly_cols = [
     "July", "August", "September", "October", "November", "December"
 ]
 
-st.subheader("📈 Monthly CO Trend")
+st.subheader("Monthly CO Trend")
 monthly_avg = df_filtered[monthly_cols].mean()
 
 fig, ax = plt.subplots(figsize=(10, 4))
@@ -40,7 +40,7 @@ ax.grid(True)
 st.pyplot(fig)
 
 # Plot 2: Top Polluted Regions by Annual Mean
-st.subheader("🏙️ Top Polluted Regions by Annual Mean")
+st.subheader("Top Polluted Regions by Annual Mean")
 top_regions = df.sort_values("Mean", ascending=False).head(10)
 
 fig2, ax2 = plt.subplots(figsize=(8, 6))
